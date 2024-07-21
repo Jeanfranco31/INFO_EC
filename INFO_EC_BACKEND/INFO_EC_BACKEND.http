@@ -1,0 +1,6 @@
+@INFO_EC_BACKEND_HostAddress = http://localhost:5106
+
+GET {{INFO_EC_BACKEND_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

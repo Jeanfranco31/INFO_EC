@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\el\\messages\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|solutionrelative:el\\messages\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\el\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|solutionrelative:el\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\common\\adoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\common\\adoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\cliente\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\cliente\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\common\\columnnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\common\\columnnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 214,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Common.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T02:55:59.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ClienteService.cs",
+              "RelativeDocumentMoniker": "BL\\Cliente\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ClienteService.cs",
+              "RelativeToolTip": "BL\\Cliente\\ClienteService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA1wK4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:52:26.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ADOquery.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ADOquery.cs",
+              "RelativeDocumentMoniker": "BL\\Common\\ADOquery.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ADOquery.cs",
+              "RelativeToolTip": "BL\\Common\\ADOquery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T03:20:55.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Helper\\Helper.cs",
+              "RelativeDocumentMoniker": "EL\\Helper\\Helper.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Helper\\Helper.cs",
+              "RelativeToolTip": "EL\\Helper\\Helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T03:24:59.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowBsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T02:54:04.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Messages\\Message.cs",
+              "RelativeDocumentMoniker": "EL\\Messages\\Message.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Messages\\Message.cs",
+              "RelativeToolTip": "EL\\Messages\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T02:48:41.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ColumnNames.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ColumnNames.cs",
+              "RelativeDocumentMoniker": "BL\\Common\\ColumnNames.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ColumnNames.cs",
+              "RelativeToolTip": "BL\\Common\\ColumnNames.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T02:43:30.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICliente.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ICliente.cs",
+              "RelativeDocumentMoniker": "BL\\Cliente\\ICliente.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ICliente.cs",
+              "RelativeToolTip": "BL\\Cliente\\ICliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:45:21.144Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
