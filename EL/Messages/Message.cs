@@ -12,5 +12,7 @@ namespace EL.Messages
         public const string clienteNoRegistrado = "No se pudo registrar el cliente.";
         public const string clienteExiste = "Cliente encontrado.";
         public const string clienteNoExiste = "No existe un cliente asociado al numero de cedula ingresado";
+        public const string clienteEditado = "Se han modificado los datos correctamente";
+        public const string clienteNoEditado = "No se pudo editar los datos del cliente";
     }
 }

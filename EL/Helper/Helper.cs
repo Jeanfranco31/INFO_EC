@@ -1,4 +1,5 @@
 ﻿using EL.DTO;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace EL.Helper
 {
     public class Helper
     {
+        ClienteDTO clienteDTO = new();
+
         public static bool ValidarCamposVacios(ClienteDTO cliente) { 
             bool validarCampos = false;
 
@@ -30,7 +33,6 @@ namespace EL.Helper
             return validarCampos;
         }
 
-        
 
     }
 }

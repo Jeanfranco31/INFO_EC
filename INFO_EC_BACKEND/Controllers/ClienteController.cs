@@ -37,6 +37,19 @@ namespace INFO_EC_BACKEND.Controllers
             return Ok(response);
         }
 
+        [Route(COMMON.Common.apiEditarCliente)]
+        [HttpPatch]
+        public async Task<IActionResult> EditarCliente([FromBody] ClienteDTO cliente)
+        {
+            response = await _service.ActualizarClientePorCedula(cliente);
+            if (response == null)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
+        }
+
+
         [Route(COMMON.Common.apiEliminarClientePorCedula)]
         [HttpDelete]
         public async Task<IActionResult> EliminarClientePorCedula(string numeroCedula)

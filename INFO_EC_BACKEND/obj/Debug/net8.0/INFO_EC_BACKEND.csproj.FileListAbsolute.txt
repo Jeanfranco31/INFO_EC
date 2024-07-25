@@ -1,10 +1,3 @@
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.csproj.AssemblyReference.cache
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.AssemblyInfoInputs.cache
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.AssemblyInfo.cs
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.csproj.CoreCompileInputs.cache
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\appsettings.json
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\INFO_EC_BACKEND.exe
@@ -125,6 +118,14 @@ C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\BL.d
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\EL.dll
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\BL.pdb
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\bin\Debug\net8.0\EL.pdb
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.AssemblyInfo.cs
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.sourcelink.json
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\staticwebassets\msbuild.INFO_EC_BACKEND.Microsoft.AspNetCore.StaticWebAssets.props

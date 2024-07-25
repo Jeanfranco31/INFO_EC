@@ -6,6 +6,7 @@
 
         public const string apiRegistrarCliente = "registrarCliente";
         public const string apiBuscarClientePorCedula = "buscarCliente";
+        public const string apiEditarCliente = "editarCliente";
         public const string apiEliminarClientePorCedula = "eliminarCliente";
     }
 }
