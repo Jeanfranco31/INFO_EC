@@ -15,13 +15,17 @@ namespace INFO_EC_BACKEND.Controllers
             _service = service;
         }
 
+        [Route(COMMON.Common.apiObtenerTodosClientes)]
+        [HttpGet]
+        public async Task<IActionResult> ObtenerTodosClientes(){
+            response = await _service.ObtenerTodos();
+            return Ok(response);
+        }
+
         [Route(COMMON.Common.apiRegistrarCliente)]
         [HttpPost]
         public async Task<IActionResult> RegistrarCliente([FromBody] ClienteDTO cliente) {
             response = await _service.RegistrarCliente(cliente);
-            if (response == null) {
-                return BadRequest();
-            }
             return Ok(response);
         }
 
@@ -30,10 +34,6 @@ namespace INFO_EC_BACKEND.Controllers
         public async Task<IActionResult> BuscarClientePorCedula(string numeroCedula)
         {
             response = await _service.BuscarClientePorCedula(numeroCedula);
-            if (response == null)
-            {
-                return BadRequest();
-            }
             return Ok(response);
         }
 
@@ -42,10 +42,6 @@ namespace INFO_EC_BACKEND.Controllers
         public async Task<IActionResult> EditarCliente([FromBody] ClienteDTO cliente)
         {
             response = await _service.ActualizarClientePorCedula(cliente);
-            if (response == null)
-            {
-                return BadRequest();
-            }
             return Ok(response);
         }
 
@@ -55,10 +51,6 @@ namespace INFO_EC_BACKEND.Controllers
         public async Task<IActionResult> EliminarClientePorCedula(string numeroCedula)
         {
             response = await _service.EliminarClientePorCedula(numeroCedula);
-            if (response == null)
-            {
-                return BadRequest();
-            }
             return Ok(response);
         }
 

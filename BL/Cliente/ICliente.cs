@@ -10,6 +10,7 @@ namespace BL.Cliente
 {
     public interface ICliente
     {
+        Task<Response> ObtenerTodos();
         Task<Response> RegistrarCliente(ClienteDTO cliente);
         Task<Response> BuscarClientePorCedula(string numeroCedula);
         Task<Response> ActualizarClientePorCedula(ClienteDTO cliente);

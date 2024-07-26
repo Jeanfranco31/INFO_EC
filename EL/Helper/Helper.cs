@@ -21,7 +21,7 @@ namespace EL.Helper
                         if (!string.IsNullOrWhiteSpace(cliente.Correo)) {
                             if (!string.IsNullOrWhiteSpace(cliente.Direccion)) {
                                 if (!string.IsNullOrWhiteSpace(cliente.Telefono)) {
-                                    if (cliente.Edad > 18) {
+                                    if (cliente.Edad >= 18) {
                                         validarCampos = true;
                                     }
                                 }

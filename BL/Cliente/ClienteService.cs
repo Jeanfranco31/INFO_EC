@@ -24,6 +24,34 @@ namespace BL.Cliente
             _connection = configuration.GetConnectionString(Common.ADOquery.cadenaConexion)!;
         }
 
+        public async Task<Response> ObtenerTodos() {
+            using (SqlConnection conn = new SqlConnection(_connection)) {
+                try
+                {
+                    await conn.OpenAsync();
+
+                    SqlCommand command = new SqlCommand(Common.ADOquery.SP_OBTENER_TODOS_CLIENTES, conn);
+
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+                    while (await reader.ReadAsync()) {
+                        ClienteDTO clienteObtenido = GenerarReader(reader);
+                        listaClientes.Add(clienteObtenido);
+                    }
+                    response.Data = listaClientes;
+                    response.message = EL.Messages.Message.clienteObtenido;
+                }
+                catch (Exception ex)
+                {
+                    response.message = ex.Message;
+                }
+                finally
+                {
+                    await conn.CloseAsync();
+                }
+            }
+            return response;
+        }
+
         public async Task<Response> RegistrarCliente(ClienteDTO cliente)
         {
             using (SqlConnection conn = new SqlConnection(_connection)) 
@@ -43,14 +71,16 @@ namespace BL.Cliente
                         command.Parameters.Add(Common.Parameters.telefonoCliente, SqlDbType.VarChar,10).Value = cliente.Telefono;
                         command.Parameters.Add(Common.Parameters.edadCliente, SqlDbType.Int).Value = cliente.Edad;
 
-                        await command.ExecuteNonQueryAsync();
+                        ClienteDTO clienteExiste = validarClienteExiste(cliente.Cedula);
+                        if (clienteExiste == null)
+                        {
+                            await command.ExecuteNonQueryAsync();
 
-                        ClienteDTO clienteEncontrado = validarClienteExiste(cliente.Cedula);
+                            ClienteDTO clienteEncontrado = validarClienteExiste(cliente.Cedula);
 
-                        if (clienteEncontrado != null) {
-                            response.Data = clienteEncontrado;
                             response.message = EL.Messages.Message.clienteRegistrado;
-                        }                        
+                            response.Data = clienteEncontrado;
+                        }                                     
                     }
                     catch (Exception ex)
                     {
@@ -65,13 +95,13 @@ namespace BL.Cliente
                 return response;
         }
 
-        public async Task<Response> BuscarClientePorCedula(string numeroCedula) {
+        public async Task<Response> BuscarClientePorCedula(string numeroCedulaABuscar) {
             using (SqlConnection conn = new SqlConnection(_connection)) {
                 try
                 {
                     await conn.OpenAsync();
                     SqlCommand command = new SqlCommand(Common.ADOquery.SP_BUSCAR_CLIENTE_POR_CEDULA, conn);
-                    command.Parameters.Add(Common.Parameters.cedulaCliente,SqlDbType.VarChar).Value = numeroCedula;
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.cedulaCliente, SqlDbType.VarChar,10) { Value = numeroCedulaABuscar });
 
                     SqlDataReader reader = await command.ExecuteReaderAsync();
 
@@ -133,23 +163,23 @@ namespace BL.Cliente
             return response;
         }
 
-        public async Task<Response> EliminarClientePorCedula(string numeroCedula) {
+        public async Task<Response> EliminarClientePorCedula(string numeroCedulaAEliminar) {
             using (SqlConnection conn = new SqlConnection(_connection)) 
             {
                 await conn.OpenAsync();
                 try
                 {
                     SqlCommand command = new SqlCommand(Common.ADOquery.SP_ELIMINAR_CLIENTE_POR_CEDULA, conn);
-                    command.Parameters.Add(Common.Parameters.cedulaCliente, SqlDbType.VarChar, 10).Value = numeroCedula;
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.cedulaCliente, SqlDbType.VarChar, 10) { Value = numeroCedulaAEliminar });
 
-                    ClienteDTO cliente = validarClienteExiste(numeroCedula);
+                    ClienteDTO cliente = validarClienteExiste(numeroCedulaAEliminar);
 
                     if (cliente != null)
                     {
                         int row = await command.ExecuteNonQueryAsync();
-                        if (row > 0)
+                        if (row >= 0)
                         {
-                            response.message = "Cliente eliminado satisfactoriamente.";
+                            response.message = EL.Messages.Message.clienteEliminado;
                             response.Data = cliente;
                         }
                     }
@@ -166,11 +196,12 @@ namespace BL.Cliente
         }
 
 
-        private ClienteDTO validarClienteExiste(string numeroCedula) {
+
+        private ClienteDTO validarClienteExiste(string numeroCedulaAValidar) {
             using (SqlConnection conn = new SqlConnection(_connection)) {
                 conn.Open();
                 SqlCommand command = new SqlCommand(Common.ADOquery.SP_BUSCAR_CLIENTE_POR_CEDULA, conn);
-                command.Parameters.Add(Common.Parameters.cedulaCliente, SqlDbType.VarChar).Value = numeroCedula;
+                command.Parameters.Add(new SqlParameter(Common.Parameters.cedulaCliente, SqlDbType.VarChar,10){ Value = numeroCedulaAValidar });
 
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read()) {
@@ -192,20 +223,20 @@ namespace BL.Cliente
         }
         public ClienteDTO GenerarReader(SqlDataReader reader)
         {
-            if (reader != null)
+            while (reader != null)
             {
-                ClienteDTO clienteDTO = new ClienteDTO
+                return new ClienteDTO
                 {
-                    Nombre = reader[Common.ColumnNames.clienteColumnNombre].ToString()!,
-                    Apellido = reader[Common.ColumnNames.clienteColumnApellido].ToString()!,
-                    Cedula = reader[Common.ColumnNames.clienteColumnCedula].ToString()!,
-                    Correo = reader[Common.ColumnNames.clienteColumnCorreo].ToString()!,
-                    Direccion = reader[Common.ColumnNames.clienteColumnDireccion].ToString()!,
-                    Telefono = reader[Common.ColumnNames.clienteColumnTelefono].ToString()!,
-                    Edad = Convert.ToInt32(reader[Common.ColumnNames.clienteColumnEdad])
+                    Nombre = reader[Common.ColumnNames.clienteColumnNombre].ToString()! ?? string.Empty,
+                    Apellido = reader[Common.ColumnNames.clienteColumnApellido].ToString()! ?? string.Empty,
+                    Cedula = reader[Common.ColumnNames.clienteColumnCedula].ToString()! ?? string.Empty,
+                    Correo = reader[Common.ColumnNames.clienteColumnCorreo].ToString()! ?? string.Empty,
+                    Direccion = reader[Common.ColumnNames.clienteColumnDireccion].ToString()! ?? string.Empty,
+                    Telefono = reader[Common.ColumnNames.clienteColumnTelefono].ToString()! ?? string.Empty,
+                    Edad = reader[Common.ColumnNames.clienteColumnEdad] != DBNull.Value ? Convert.ToInt32(reader[Common.ColumnNames.clienteColumnEdad]):0
                 };
             }
-            return clienteDTO;
+            return new ClienteDTO();
         }
     }
 }
