@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\el\\messages\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|solutionrelative:el\\messages\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\el\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|solutionrelative:el\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\cliente\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\cliente\\icliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,67 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICliente.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ICliente.cs",
-              "RelativeDocumentMoniker": "BL\\Cliente\\ICliente.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ICliente.cs",
-              "RelativeToolTip": "BL\\Cliente\\ICliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:39:11.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Helper.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Helper\\Helper.cs",
-              "RelativeDocumentMoniker": "EL\\Helper\\Helper.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Helper\\Helper.cs",
-              "RelativeToolTip": "EL\\Helper\\Helper.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBcAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T00:53:43.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Common.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
-              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\COMMON\\Common.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
-              "RelativeToolTip": "INFO_EC_BACKEND\\COMMON\\Common.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T00:41:36.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Messages\\Message.cs",
-              "RelativeDocumentMoniker": "EL\\Messages\\Message.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\Messages\\Message.cs",
-              "RelativeToolTip": "EL\\Messages\\Message.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T00:32:39.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ClienteService.cs",
-              "RelativeDocumentMoniker": "BL\\Cliente\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Cliente\\ClienteService.cs",
-              "RelativeToolTip": "BL\\Cliente\\ClienteService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAADwv8UAAAAAAAAA",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:52:26.752Z",
+              "WhenOpened": "2024-09-05T01:49:44.98Z",
               "EditorCaption": ""
             }
           ]

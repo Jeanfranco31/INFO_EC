@@ -1,6 +1,6 @@
 ﻿using EL.DTO;
 using EL.Response;
-using EL.Helper;
+using BL.Helper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -34,7 +34,7 @@ namespace BL.Cliente
 
                     SqlDataReader reader = await command.ExecuteReaderAsync();
                     while (await reader.ReadAsync()) {
-                        ClienteDTO clienteObtenido = GenerarReader(reader);
+                        ClienteDTO clienteObtenido = Helper.Helper.GenerarReader(reader);
                         listaClientes.Add(clienteObtenido);
                     }
                     response.Data = listaClientes;
@@ -57,7 +57,7 @@ namespace BL.Cliente
             using (SqlConnection conn = new SqlConnection(_connection)) 
             {
                 await conn.OpenAsync();
-                if (Helper.ValidarCamposVacios(cliente))
+                if (Helper.Helper.ValidarCamposVacios(cliente))
                 {
                     try
                     {
@@ -107,7 +107,7 @@ namespace BL.Cliente
 
                     if (await reader.ReadAsync())
                     {
-                        ClienteDTO readerObtenido = GenerarReader(reader);
+                        ClienteDTO readerObtenido = Helper.Helper.GenerarReader(reader);
 
                         response.message = EL.Messages.Message.clienteExiste;
                         response.Data = readerObtenido;
@@ -146,7 +146,7 @@ namespace BL.Cliente
                     SqlDataReader reader = await command.ExecuteReaderAsync();
 
                     if (await reader.ReadAsync()) {
-                        ClienteDTO readerObtenido =  GenerarReader(reader);
+                        ClienteDTO readerObtenido =  Helper.Helper.GenerarReader(reader);
                         response.Data = readerObtenido;
                         response.message = EL.Messages.Message.clienteEditado; 
                     }
@@ -221,22 +221,6 @@ namespace BL.Cliente
             }
             return null!;
         }
-        public ClienteDTO GenerarReader(SqlDataReader reader)
-        {
-            while (reader != null)
-            {
-                return new ClienteDTO
-                {
-                    Nombre = reader[Common.ColumnNames.clienteColumnNombre].ToString()! ?? string.Empty,
-                    Apellido = reader[Common.ColumnNames.clienteColumnApellido].ToString()! ?? string.Empty,
-                    Cedula = reader[Common.ColumnNames.clienteColumnCedula].ToString()! ?? string.Empty,
-                    Correo = reader[Common.ColumnNames.clienteColumnCorreo].ToString()! ?? string.Empty,
-                    Direccion = reader[Common.ColumnNames.clienteColumnDireccion].ToString()! ?? string.Empty,
-                    Telefono = reader[Common.ColumnNames.clienteColumnTelefono].ToString()! ?? string.Empty,
-                    Edad = reader[Common.ColumnNames.clienteColumnEdad] != DBNull.Value ? Convert.ToInt32(reader[Common.ColumnNames.clienteColumnEdad]):0
-                };
-            }
-            return new ClienteDTO();
-        }
+        
     }
 }
