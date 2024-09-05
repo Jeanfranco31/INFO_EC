@@ -27,6 +27,8 @@ namespace EL.Messages
         public const string empleadoEliminado = "Datos del empleado eliminados";
         public const string empleadoNoEliminado = "No se pudo eliminar al empleado.";
         public const string empleadoObtenido = "Lista de Empleados";
+        public const string empleadoEditado = "Informacion del empleado actualizada";
+        public const string empleadoNoEditado = "Al parecer no existe un empleado con el numero de cedula ingresado";
 
     }
 }

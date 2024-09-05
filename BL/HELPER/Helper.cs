@@ -73,6 +73,7 @@ namespace BL.Helper
             }
             return new ClienteDTO();
         }
+        
         public static string Encrypt(string data)
         {
             byte[] bytes = SHA256.HashData(Encoding.UTF8.GetBytes(data));
