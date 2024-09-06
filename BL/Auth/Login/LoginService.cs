@@ -36,7 +36,7 @@ namespace BL.Auth.Login
                         {
                             password = reader[Common.ColumnNames.employeePass].ToString()!
                         };
-                        if (loginData.password.Equals(login.password))
+                        if (loginData.password.Equals(Helper.Helper.Encrypt(login.password)))
                         {
                             response.Data = string.Empty;
                             response.message = EL.Messages.Message.loginSuccess;

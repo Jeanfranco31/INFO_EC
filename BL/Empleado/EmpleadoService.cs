@@ -11,6 +11,7 @@ using System.Data;
 using System.Threading.Tasks;
 using System.Reflection.PortableExecutable;
 using INFO_EC_BACKEND.Models;
+using EL.Messages;
 
 namespace BL.Empleado
 {
@@ -63,7 +64,7 @@ namespace BL.Empleado
                     await conn.OpenAsync();
                     SqlCommand command = new(ADOquery.SP_REGISTRAR_EMPLEADO, conn);
 
-                    command.Parameters.Add(new SqlParameter(Common.Parameters.claveEmpleado, SqlDbType.VarChar) { Value = empleado.clave });
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.claveEmpleado, SqlDbType.VarChar) { Value = Helper.Helper.Encrypt(empleado.clave!) });
                     command.Parameters.Add(new SqlParameter(Common.Parameters.nombreRol.ToUpper(), SqlDbType.VarChar, 30) { Value = empleado.NombreRol });
                     command.Parameters.Add(new SqlParameter(Common.Parameters.nombreEmpleado, SqlDbType.VarChar, 50) { Value = empleado.NombreEmpleado });
                     command.Parameters.Add(new SqlParameter(Common.Parameters.apellidoEmpleado, SqlDbType.VarChar, 50) { Value = empleado.ApellidoEmpleado });
@@ -103,7 +104,7 @@ namespace BL.Empleado
             using (SqlConnection conn = new(_connection)) {
                 try
                 {
-                    if (ValidarEmpleadoExiste(empleado.CedulaEmpleado) != null)
+                    if (ValidarEmpleadoExiste(empleado.CedulaEmpleado!) != null)
                     {
                         await conn.OpenAsync();
                         SqlCommand command = new(Common.ADOquery.SP_EDITAR_EMPLEADO, conn);
@@ -119,14 +120,14 @@ namespace BL.Empleado
                         int rowAffected = await command.ExecuteNonQueryAsync();
                         if (rowAffected > 0)
                         {
-                            EmpleadoDTO datosActualizados = ValidarEmpleadoExiste(empleado.CedulaEmpleado);
+                            EmpleadoDTO datosActualizados = ValidarEmpleadoExiste(empleado.CedulaEmpleado!);
                             response.Data = datosActualizados;
-                            response.message = "Informacion del empleado actualizada";
+                            response.message = Message.empleadoEditado;
                         }
                     }
                     else 
                     {
-                        response.message = "Al parecer no existe un empleado con el numero de cedula ingresado";
+                        response.message = Message.empleadoNoEditado;
                         response.Data = String.Empty;
                     }
                 }

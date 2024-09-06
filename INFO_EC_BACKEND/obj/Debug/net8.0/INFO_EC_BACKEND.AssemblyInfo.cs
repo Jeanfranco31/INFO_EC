@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INFO_EC_BACKEND")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a38d0ad0b99f573b2198eb3127c7cf81459eaf01")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cdc789284d329b2b890f15d887237ff80ee5648")]
+>>>>>>> cbfe31588b81b47de1b6acdc69061550012942af
 [assembly: System.Reflection.AssemblyProductAttribute("INFO_EC_BACKEND")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INFO_EC_BACKEND")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

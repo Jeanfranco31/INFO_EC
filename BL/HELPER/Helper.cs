@@ -4,6 +4,7 @@ using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -71,6 +72,17 @@ namespace BL.Helper
                 };
             }
             return new ClienteDTO();
+        }
+        
+        public static string Encrypt(string data)
+        {
+            byte[] bytes = SHA256.HashData(Encoding.UTF8.GetBytes(data));
+            StringBuilder builder = new();
+            for(int i=0; i<bytes.Length; i++)
+            {
+                builder.Append(bytes[i].ToString("X2"));
+            }
+            return builder.ToString();
         }
     }
 }

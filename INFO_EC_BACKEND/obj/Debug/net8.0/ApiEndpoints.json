@@ -1,0 +1,166 @@
+[
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.ClienteController",
+    "Method": "BuscarClientePorCedula",
+    "RelativePath": "buscarCliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCedula",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.EmpleadoController",
+    "Method": "BuscarEmpleadoPorCedula",
+    "RelativePath": "buscarEmpleadoPorCedula",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedulaABuscar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.ClienteController",
+    "Method": "EditarCliente",
+    "RelativePath": "editarCliente",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "EL.DTO.ClienteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.EmpleadoController",
+    "Method": "EditarEmpleado",
+    "RelativePath": "editarEmpleado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleadoDTO",
+        "Type": "EL.DTO.EmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.ClienteController",
+    "Method": "EliminarClientePorCedula",
+    "RelativePath": "eliminarCliente",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCedula",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.EmpleadoController",
+    "Method": "EliminarEmpleado",
+    "RelativePath": "eliminarEmpleado",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedulaAEliminar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.EmpleadoController",
+    "Method": "ObtenerTodosEmpleados",
+    "RelativePath": "obtenerListaEmpleados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.ClienteController",
+    "Method": "ObtenerTodosClientes",
+    "RelativePath": "obtenerTodosClientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.ClienteController",
+    "Method": "RegistrarCliente",
+    "RelativePath": "registrarCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "EL.DTO.ClienteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.EmpleadoController",
+    "Method": "RegistrarEmpleado",
+    "RelativePath": "registrarEmpleado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleadoDTO",
+        "Type": "EL.DTO.EmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INFO_EC_BACKEND.Controllers.LoginController",
+    "Method": "validateLogin",
+    "RelativePath": "validarLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginData",
+        "Type": "EL.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
