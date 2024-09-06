@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\menuopciones\\menuopcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\menuopciones\\menuopcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\controllers\\menuopcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\controllers\\menuopcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF912A-D573-49FE-B2A3-F160769CA318}|INFO_EC_BACKEND\\INFO_EC_BACKEND.csproj|solutionrelative:info_ec_backend\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\common\\adoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\common\\adoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\bl\\menuopciones\\imenuopcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBB0407-39E7-4AFE-929F-5796EC23399D}|BL\\BL.csproj|solutionrelative:bl\\menuopciones\\imenuopcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|c:\\users\\dell\\source\\repos\\info_ec_backend\\el\\dto\\menuopciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276F0135-13F9-41C1-BE97-0A97FCD0FC9A}|EL\\EL.csproj|solutionrelative:el\\dto\\menuopciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +58,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "INFO_EC_BACKEND\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Program.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Program.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T01:49:44.98Z",
+              "WhenOpened": "2024-09-06T01:17:18.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Common.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\COMMON\\Common.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T01:15:17.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuOpcionController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\MenuOpcionController.cs",
+              "RelativeDocumentMoniker": "INFO_EC_BACKEND\\Controllers\\MenuOpcionController.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\INFO_EC_BACKEND\\Controllers\\MenuOpcionController.cs",
+              "RelativeToolTip": "INFO_EC_BACKEND\\Controllers\\MenuOpcionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T01:11:19.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ADOquery.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ADOquery.cs",
+              "RelativeDocumentMoniker": "BL\\Common\\ADOquery.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\Common\\ADOquery.cs",
+              "RelativeToolTip": "BL\\Common\\ADOquery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T01:03:45.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuOpcionService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\MenuOpciones\\MenuOpcionService.cs",
+              "RelativeDocumentMoniker": "BL\\MenuOpciones\\MenuOpcionService.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\MenuOpciones\\MenuOpcionService.cs",
+              "RelativeToolTip": "BL\\MenuOpciones\\MenuOpcionService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wCkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T00:58:51.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMenuOpcion.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\MenuOpciones\\IMenuOpcion.cs",
+              "RelativeDocumentMoniker": "BL\\MenuOpciones\\IMenuOpcion.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\BL\\MenuOpciones\\IMenuOpcion.cs",
+              "RelativeToolTip": "BL\\MenuOpciones\\IMenuOpcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T00:57:55.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuOpcionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\DTO\\MenuOpcionDTO.cs",
+              "RelativeDocumentMoniker": "EL\\DTO\\MenuOpcionDTO.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\EL\\DTO\\MenuOpcionDTO.cs",
+              "RelativeToolTip": "EL\\DTO\\MenuOpcionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T00:55:30.512Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,7 @@
 using BL.Auth.Login;
 using BL.Cliente;
 using BL.Empleado;
+using BL.MenuOpciones;
 using INFO_EC_BACKEND.COMMON;
 using INFO_EC_BACKEND.Models;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +33,8 @@ builder.Services.AddScoped<ClienteService>();
 builder.Services.AddScoped<EmpleadoService>();
 
 builder.Services.AddScoped<LoginService>();
+builder.Services.AddScoped<MenuOpcionService>();
+builder.Services.AddScoped<IMenuOpcion, MenuOpcionService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

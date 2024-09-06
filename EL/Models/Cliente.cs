@@ -9,5 +9,5 @@ public partial class Cliente
 
     public int? IdCuenta { get; set; }
 
-    public virtual Cuentum? IdCuentaNavigation { get; set; }
+    public virtual Cuenta? IdCuentaNavigation { get; set; }
 }

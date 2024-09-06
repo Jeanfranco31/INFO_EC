@@ -15,5 +15,5 @@ public partial class Producto
 
     public int? CategoriaIdCategoria { get; set; }
 
-    public virtual Categorium? CategoriaIdCategoriaNavigation { get; set; }
+    public virtual Categoria? CategoriaIdCategoriaNavigation { get; set; }
 }

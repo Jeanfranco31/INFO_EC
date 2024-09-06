@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace INFO_EC_BACKEND.Models;
 
-public partial class Cuentum
+public partial class Cuenta
 {
     public int IdCuenta { get; set; }
 

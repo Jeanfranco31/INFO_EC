@@ -15,11 +15,11 @@ public partial class InfoEcDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Categorium> Categoria { get; set; }
+    public virtual DbSet<Categoria> Categoria { get; set; }
 
     public virtual DbSet<Cliente> Clientes { get; set; }
 
-    public virtual DbSet<Cuentum> Cuenta { get; set; }
+    public virtual DbSet<Cuenta> Cuenta { get; set; }
 
     public virtual DbSet<Empleado> Empleados { get; set; }
 
@@ -33,7 +33,7 @@ public partial class InfoEcDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Categorium>(entity =>
+        modelBuilder.Entity<Categoria>(entity =>
         {
             entity.HasKey(e => e.IdCategoria).HasName("PK__CATEGORI__CB9033494C486FF3");
 
@@ -60,7 +60,7 @@ public partial class InfoEcDbContext : DbContext
                 .HasConstraintName("FK__CLIENTE__Id_Cuen__3B75D760");
         });
 
-        modelBuilder.Entity<Cuentum>(entity =>
+        modelBuilder.Entity<Cuenta>(entity =>
         {
             entity.HasKey(e => e.IdCuenta).HasName("PK__CUENTA__462699D8F38CB97E");
 

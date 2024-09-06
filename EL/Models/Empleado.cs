@@ -13,7 +13,7 @@ public partial class Empleado
 
     public int? CuentaIdCuenta { get; set; }
 
-    public virtual Cuentum? CuentaIdCuentaNavigation { get; set; }
+    public virtual Cuenta? CuentaIdCuentaNavigation { get; set; }
 
     public virtual Rol? RolIdRolNavigation { get; set; }
 }

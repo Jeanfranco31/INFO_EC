@@ -24,5 +24,7 @@ namespace BL.Common
         public const string SP_BUSCAR_EMPLEADO_POR_CEDULA = "EXEC SP_BUSCAR_EMPLEADO_POR_CEDULA @Cedula";
         public const string SP_EDITAR_EMPLEADO = "EXEC SP_Editar_Empleado @NombreRol, @Nombre, @Apellido, @Cedula, @Telefono, @Correo, @Direccion, @Edad;";
         public const string SP_ELIMINAR_EMPLEADO_POR_CEDULA = "EXEC SP_ELIMINAR_EMPLEADO_POR_CEDULA @Cedula";
+
+        public const string SP_OBTENER_MENU_OPCIONES = "EXEC SP_GET_MENU_OPCIONES;";
     }
 }

@@ -17,5 +17,7 @@
         public const string apiRegistrarEmpleado = "registrarEmpleado";
         public const string apiEditarEmpleado = "editarEmpleado";
         public const string apiEliminarEmpleado = "eliminarEmpleado";
+        
+        public const string apiObtenerMenuOpciones = "getMenuOpciones";
     }
 }
