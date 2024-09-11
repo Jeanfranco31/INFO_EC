@@ -73,7 +73,25 @@ namespace BL.Helper
             }
             return new ClienteDTO();
         }
-        
+
+        public static ProductoDto GenerateReaderProduct(SqlDataReader reader)
+        {
+            ProductoDto producto = new();
+            if (reader != null)
+            {
+                producto = new ProductoDto
+                {
+                    Id_Producto = Convert.ToInt32(reader["Id_Producto"]),
+                    Nombre = reader["Nombre"].ToString()!,
+                    ImagenPath = reader["Imagen"].ToString()!,
+                    Precio = Convert.ToDecimal(reader["Precio"]),
+                    NombreCategoria = reader["Nombre_Categoria"].ToString()!,
+                    NombreMarca = reader["Nombre_Marca"].ToString()!
+                };
+            }
+            return producto;
+        }
+
         public static string Encrypt(string data)
         {
             byte[] bytes = SHA256.HashData(Encoding.UTF8.GetBytes(data));

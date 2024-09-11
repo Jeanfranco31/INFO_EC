@@ -30,5 +30,7 @@ namespace EL.Messages
         public const string empleadoEditado = "Informacion del empleado actualizada";
         public const string empleadoNoEditado = "Al parecer no existe un empleado con el numero de cedula ingresado";
 
+        public const string productoObtenido = "Informacion de productos";
+
     }
 }

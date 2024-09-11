@@ -1,0 +1,113 @@
+﻿using EL.DTO;
+using EL.Messages;
+using EL.Response;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BL.Producto
+{
+    public class ProductService : IProducto
+    {
+        private string _connection;
+        private Response response = new();
+        private ProductoDto productoDTO;
+        private List<ProductoDto> productsList = new();
+
+        public ProductService(IConfiguration configuration) => _connection = configuration.GetConnectionString(Common.ADOquery.cadenaConexion)!;
+
+
+        public async Task<Response> addProduct()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<Response> getAllProducts()
+        {
+            using (SqlConnection conn = new(_connection)) 
+            {
+                try
+                {
+                    await conn.OpenAsync();
+                    SqlCommand command = new(Common.ADOquery.SP_GET_PRODUCTS, conn);
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+                    
+                    while(await reader.ReadAsync())
+                    {
+                        productoDTO = Helper.Helper.GenerateReaderProduct(reader);        
+                    }
+                    productsList.Add(productoDTO);
+                    response.Data = productsList;
+                    response.message = Message.productoObtenido;
+                }
+                catch(Exception ex)
+                {
+                    response.Data = string.Empty;
+                    response.message = ex.Message;
+                }
+                finally 
+                {
+                    await conn.CloseAsync();
+                }
+            }
+            return response;
+        }
+
+        public async Task<Response> getProductById(int id)
+        {
+            using (SqlConnection conn = new(_connection)) 
+            {
+                try
+                {
+                    await conn.OpenAsync();
+                    SqlCommand command = new("EXEC SP_GET_PRODUCT_BY_ID @Id_Producto", conn);
+                    command.Parameters.Add(new SqlParameter("@Id_Producto", SqlDbType.Int) { Value = id });
+
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                    if (await reader.ReadAsync()) 
+                    {
+                        productoDTO = Helper.Helper.GenerateReaderProduct(reader);
+                        if(productoDTO != null)
+                        {
+                            response.Data = productoDTO;
+                            response.message = "Producto Obtenido";
+                        }
+                    }
+                    else
+                    {
+                        response.Data = string.Empty;
+                        response.message = "Al parecer no existe un producto con el ID seleccionado";
+                    }                   
+                }
+                catch(Exception ex)
+                {
+                    response.Data = string.Empty;
+                    response.message = ex.Message;
+                }
+                finally
+                {
+                    await conn.CloseAsync();
+                }
+            }
+            return response;
+        }
+
+        public Task<Response> removeProduct()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Response> updateProduct()
+        {
+            throw new NotImplementedException();
+        }
+
+
+    }
+}

@@ -26,5 +26,7 @@ namespace BL.Common
         public const string SP_ELIMINAR_EMPLEADO_POR_CEDULA = "EXEC SP_ELIMINAR_EMPLEADO_POR_CEDULA @Cedula";
 
         public const string SP_OBTENER_MENU_OPCIONES = "EXEC SP_GET_MENU_OPCIONES;";
+
+        public const string SP_GET_PRODUCTS = "SELECT Id_Producto, Nombre, Imagen, Precio, c.Nombre_Categoria, m.Nombre_Marca FROM PRODUCTO INNER JOIN CATEGORIA c ON c.Id_Categoria = Categoria_IdCategoria INNER JOIN MARCA m ON m.Id_Marca = Marca_Id_Marca;";
     }
 }

@@ -41,6 +41,11 @@ namespace BL.Auth.Login
                             response.Data = string.Empty;
                             response.message = EL.Messages.Message.loginSuccess;
                         }
+                        else
+                        {
+                            response.Data = "ERROR";
+                            response.message = "FALLO AL INICIAR SESION";
+                        }
                     }
                 }
                 catch (Exception ex)

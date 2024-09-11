@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\viamatica\\Desktop\\INFO_EC\\INFO_EC\\DL\\DL.csproj": {}
+    "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\DL\\DL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\viamatica\\Desktop\\INFO_EC\\INFO_EC\\DL\\DL.csproj": {
+    "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\DL\\DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\viamatica\\Desktop\\INFO_EC\\INFO_EC\\DL\\DL.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\DL\\DL.csproj",
         "projectName": "DL",
-        "projectPath": "C:\\Users\\viamatica\\Desktop\\INFO_EC\\INFO_EC\\DL\\DL.csproj",
-        "packagesPath": "C:\\Users\\viamatica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\viamatica\\Desktop\\INFO_EC\\INFO_EC\\DL\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\DL\\DL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\source\\repos\\INFO_EC_BACKEND\\DL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\viamatica\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

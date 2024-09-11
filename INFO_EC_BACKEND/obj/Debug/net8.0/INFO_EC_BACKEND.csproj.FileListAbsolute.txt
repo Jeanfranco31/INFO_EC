@@ -280,3 +280,4 @@ C:\Users\viamatica\Desktop\INFO_EC\INFO_EC\INFO_EC_BACKEND\obj\Debug\net8.0\refi
 C:\Users\viamatica\Desktop\INFO_EC\INFO_EC\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.pdb
 C:\Users\viamatica\Desktop\INFO_EC\INFO_EC\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.genruntimeconfig.cache
 C:\Users\viamatica\Desktop\INFO_EC\INFO_EC\INFO_EC_BACKEND\obj\Debug\net8.0\ref\INFO_EC_BACKEND.dll
+C:\Users\Dell\source\repos\INFO_EC_BACKEND\INFO_EC_BACKEND\obj\Debug\net8.0\INFO_EC_BACKEND.MvcApplicationPartsAssemblyInfo.cs

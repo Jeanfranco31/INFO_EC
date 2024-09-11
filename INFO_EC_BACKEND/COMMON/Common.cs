@@ -4,7 +4,7 @@
     {
         public const string connectionName = "Info_Ec_DB";
 
-        public const string apiValidarLogin = "validarLogin";
+        public const string apiValidarLogin = "login";
 
         public const string apiObtenerTodosClientes = "obtenerTodosClientes";
         public const string apiRegistrarCliente = "registrarCliente";
@@ -19,5 +19,9 @@
         public const string apiEliminarEmpleado = "eliminarEmpleado";
         
         public const string apiObtenerMenuOpciones = "getMenuOpciones";
+
+        public const string apiObtenerProductos = "GetProducts";
+        public const string apiObtenerProductoById = "GetProductsById";
+
     }
 }
