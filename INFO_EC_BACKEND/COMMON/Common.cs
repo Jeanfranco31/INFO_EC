@@ -22,6 +22,8 @@
 
         public const string apiObtenerProductos = "GetProducts";
         public const string apiObtenerProductoById = "GetProductsById";
+        public const string apiAgregarProducto = "AddProduct";
+        public const string apiEliminarProducto = "DeleteProductById";
 
     }
 }

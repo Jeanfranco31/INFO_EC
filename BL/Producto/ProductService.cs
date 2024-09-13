@@ -96,10 +96,35 @@ namespace BL.Producto
 
         public async Task<Response> addProduct(ProductoDto product)
         {
-           
+            using (SqlConnection conn = new(_connection))
+            {
+                try 
+                {
+                    await conn.OpenAsync();
+                    SqlCommand command = new(Common.ADOquery.SP_ADD_PRODUCT,conn);
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.param_NombreProducto, SqlDbType.VarChar) { Value = product.Nombre});
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.paramImagenPath, SqlDbType.VarChar) {Value = product.ImagenPath});
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.paramPrecio, SqlDbType.Decimal) {Value = product.Precio });
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.paramNombreCategoria, SqlDbType.VarChar) {Value = product.NombreCategoria });
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.paramNombreMarca, SqlDbType.VarChar) {Value = product.NombreMarca });
 
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+                    if(await reader.ReadAsync()) 
+                    {
+                        response.Data = Helper.Helper.GenerateReaderProduct(reader);
+                        response.message = "Producto agregado correctamente";
+                    }
+                }
+                catch(Exception ex)
+                {
+                    response.Data = string.Empty;
+                    response.message = "Ocurrio un error al agregar el producto, "+ex.ToString();
+                }
+                finally { await conn.CloseAsync(); }
+            }
             return response;
         }
+
         public async Task<Response> removeProduct(int id)
         {
             using (SqlConnection conn = new(_connection)) 

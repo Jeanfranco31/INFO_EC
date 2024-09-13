@@ -30,5 +30,6 @@ namespace BL.Common
         public const string SP_GET_PRODUCTS = "SELECT Id_Producto, Nombre, Imagen, Precio, c.Nombre_Categoria, m.Nombre_Marca FROM PRODUCTO INNER JOIN CATEGORIA c ON c.Id_Categoria = Categoria_IdCategoria INNER JOIN MARCA m ON m.Id_Marca = Marca_Id_Marca;";
         public const string SP_GET_PRODUCT_BY_ID = "EXEC SP_GET_PRODUCT_BY_ID @Id_Producto";
         public const string SP_DELETE_PRODUCT = "EXEC SP_DELETE_PRODUCT @Id_Producto";
+        public const string SP_ADD_PRODUCT = "EXEC SP_ADD_PRODUCT @Nombre, @ImagenPath, @Precio, @NombreCategoria, @NombreMarca;";
     }
 }

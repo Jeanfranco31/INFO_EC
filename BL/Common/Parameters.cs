@@ -39,6 +39,11 @@ namespace BL.Common
         #region Tabla Producto
 
         public const string param_IdProducto = "@Id_Producto";
+        public const string param_NombreProducto = "@Nombre";
+        public const string paramImagenPath = "@ImagenPath";
+        public const string paramPrecio = "@Precio";
+        public const string paramNombreCategoria = "@NombreCategoria";
+        public const string paramNombreMarca = "@NombreMarca";
 
         #endregion
     }
