@@ -25,5 +25,12 @@ namespace INFO_EC_BACKEND.Controllers
             response = await _productService.getProductById(id);
             return Ok(response);
         }
+
+        [HttpPost("DeleteProductById")]
+        public async Task<IActionResult> RemoveProduct([FromQuery] int id)
+        {
+            response = await _productService.removeProduct(id);
+            return Ok(response);
+        }
     }
 }

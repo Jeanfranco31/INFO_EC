@@ -39,6 +39,7 @@ builder.Services.AddScoped<IMenuOpcion, MenuOpcionService>();
 builder.Services.AddScoped<IProducto, ProductService>();
 builder.Services.AddScoped<ProductService>();
 
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

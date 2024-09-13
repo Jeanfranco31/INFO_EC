@@ -35,5 +35,11 @@ namespace BL.Common
         public const string edadEmpleado = "@Edad";
 
         #endregion
+
+        #region Tabla Producto
+
+        public const string param_IdProducto = "@Id_Producto";
+
+        #endregion
     }
 }

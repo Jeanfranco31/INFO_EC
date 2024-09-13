@@ -22,11 +22,6 @@ namespace BL.Producto
         public ProductService(IConfiguration configuration) => _connection = configuration.GetConnectionString(Common.ADOquery.cadenaConexion)!;
 
 
-        public async Task<Response> addProduct()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<Response> getAllProducts()
         {
             using (SqlConnection conn = new(_connection)) 
@@ -65,8 +60,8 @@ namespace BL.Producto
                 try
                 {
                     await conn.OpenAsync();
-                    SqlCommand command = new("EXEC SP_GET_PRODUCT_BY_ID @Id_Producto", conn);
-                    command.Parameters.Add(new SqlParameter("@Id_Producto", SqlDbType.Int) { Value = id });
+                    SqlCommand command = new(Common.ADOquery.SP_GET_PRODUCT_BY_ID, conn);
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.param_IdProducto, SqlDbType.Int) { Value = id });
 
                     SqlDataReader reader = await command.ExecuteReaderAsync();
 
@@ -76,13 +71,13 @@ namespace BL.Producto
                         if(productoDTO != null)
                         {
                             response.Data = productoDTO;
-                            response.message = "Producto Obtenido";
+                            response.message = Message.productExists;
                         }
                     }
                     else
                     {
                         response.Data = string.Empty;
-                        response.message = "Al parecer no existe un producto con el ID seleccionado";
+                        response.message = Message.productNotExists;
                     }                   
                 }
                 catch(Exception ex)
@@ -98,14 +93,47 @@ namespace BL.Producto
             return response;
         }
 
-        public Task<Response> removeProduct()
+
+        public async Task<Response> addProduct(ProductoDto product)
         {
-            throw new NotImplementedException();
+           
+
+            return response;
+        }
+        public async Task<Response> removeProduct(int id)
+        {
+            using (SqlConnection conn = new(_connection)) 
+            {
+                try
+                {
+                    await conn.OpenAsync();
+                    SqlCommand command = new(Common.ADOquery.SP_DELETE_PRODUCT,conn);
+                    command.Parameters.Add(new SqlParameter(Common.Parameters.param_IdProducto, SqlDbType.Int) { Value = id });
+
+                    int row = await command.ExecuteNonQueryAsync();
+
+                    if(row > 0) 
+                    {
+                        response.Data = string.Empty;
+                        response.message = "Producto eliminado";
+                    }
+                }
+                catch(Exception ex)
+                {
+                    response.Data = string.Empty;
+                    response.message = "Ocurrio un error al tratar de eliminar el dato. " + ex.Message;
+                }
+                finally
+                {
+                    await conn.CloseAsync();
+                }
+            }
+            return response;
         }
 
-        public Task<Response> updateProduct()
+        public async Task<Response> updateProduct(ProductoDto product)
         {
-            throw new NotImplementedException();
+            return response;
         }
 
 

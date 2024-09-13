@@ -31,6 +31,7 @@ namespace EL.Messages
         public const string empleadoNoEditado = "Al parecer no existe un empleado con el numero de cedula ingresado";
 
         public const string productoObtenido = "Informacion de productos";
-
+        public const string productExists = "Producto Obtenido";
+        public const string productNotExists = "Al parecer no existe un producto con el ID seleccionado";
     }
 }
